@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF19B938-41F6-3AFD-B221-99D5C1A83320}</ProjectGuid>
+    <RootNamespace>cube</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>cube</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>cube</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cube</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cube</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;C:\qt\qt5.5.1\5.5\msvc2013\include;C:\qt\qt5.5.1\5.5\msvc2013\include\QtOpenGL;C:\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\qt\qt5.5.1\5.5\msvc2013\include\QtGui;C:\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE;C:\qt\qt5.5.1\5.5\msvc2013\include\QtCore;release;C:\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\qt\qt5.5.1\5.5\msvc2013\lib\qtmain.lib;shell32.lib;C:/qt/qt5.5.1/5.5/msvc2013/lib\Qt5Core.lib;C:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5OpenGL.lib;C:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Widgets.lib;C:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Gui.lib;C:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\qt\qt5.5.1\5.5\msvc2013\lib;C:/qt/qt5.5.1/5.5/msvc2013/lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\cube.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;C:\qt\qt5.5.1\5.5\msvc2013\include;C:\qt\qt5.5.1\5.5\msvc2013\include\QtOpenGL;C:\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\qt\qt5.5.1\5.5\msvc2013\include\QtGui;C:\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE;C:\qt\qt5.5.1\5.5\msvc2013\include\QtCore;debug;C:\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\qt\qt5.5.1\5.5\msvc2013\lib\qtmaind.lib;shell32.lib;C:/qt/qt5.5.1/5.5/msvc2013/lib\Qt5Cored.lib;C:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5OpenGLd.lib;C:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Widgetsd.lib;C:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Guid.lib;C:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Cored.lib;external\OpenGL\opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\qt\qt5.5.1\5.5\msvc2013\lib;C:/qt/qt5.5.1/5.5/msvc2013/lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\cube.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="external\assimp\3DSConverter.cpp" />
+    <ClCompile Include="external\assimp\3DSLoader.cpp" />
+    <ClCompile Include="external\assimp\ACLoader.cpp" />
+    <ClCompile Include="external\assimp\ASELoader.cpp" />
+    <ClCompile Include="external\assimp\ASEParser.cpp" />
+    <ClCompile Include="external\assimp\Assimp.cpp" />
+    <ClCompile Include="external\assimp\AssimpCExport.cpp" />
+    <ClCompile Include="external\assimp\AssimpPCH.cpp" />
+    <ClCompile Include="external\assimp\B3DImporter.cpp" />
+    <ClCompile Include="external\assimp\BVHLoader.cpp" />
+    <ClCompile Include="external\assimp\BaseImporter.cpp" />
+    <ClCompile Include="external\assimp\BaseProcess.cpp" />
+    <ClCompile Include="external\assimp\Bitmap.cpp" />
+    <ClCompile Include="external\assimp\BlenderBMesh.cpp" />
+    <ClCompile Include="external\assimp\BlenderDNA.cpp" />
+    <ClCompile Include="external\assimp\BlenderLoader.cpp" />
+    <ClCompile Include="external\assimp\BlenderModifier.cpp" />
+    <ClCompile Include="external\assimp\BlenderScene.cpp" />
+    <ClCompile Include="external\assimp\BlenderTessellator.cpp" />
+    <ClCompile Include="external\assimp\COBLoader.cpp" />
+    <ClCompile Include="external\assimp\CSMLoader.cpp" />
+    <ClCompile Include="external\assimp\CalcTangentsProcess.cpp" />
+    <ClCompile Include="external\assimp\ColladaExporter.cpp" />
+    <ClCompile Include="external\assimp\ColladaLoader.cpp" />
+    <ClCompile Include="external\assimp\ColladaParser.cpp" />
+    <ClCompile Include="external\assimp\ComputeUVMappingProcess.cpp" />
+    <ClCompile Include="external\assimp\ConvertToLHProcess.cpp" />
+    <ClCompile Include="external\assimp\contrib\ConvertUTF\ConvertUTF.c" />
+    <ClCompile Include="external\assimp\DXFLoader.cpp" />
+    <ClCompile Include="external\assimp\DeboneProcess.cpp" />
+    <ClCompile Include="external\assimp\DefaultIOStream.cpp" />
+    <ClCompile Include="external\assimp\DefaultIOSystem.cpp" />
+    <ClCompile Include="external\assimp\DefaultLogger.cpp" />
+    <ClCompile Include="external\assimp\Exporter.cpp" />
+    <ClCompile Include="external\assimp\FBXAnimation.cpp" />
+    <ClCompile Include="external\assimp\FBXBinaryTokenizer.cpp" />
+    <ClCompile Include="external\assimp\FBXConverter.cpp" />
+    <ClCompile Include="external\assimp\FBXDeformer.cpp" />
+    <ClCompile Include="external\assimp\FBXDocument.cpp" />
+    <ClCompile Include="external\assimp\FBXDocumentUtil.cpp" />
+    <ClCompile Include="external\assimp\FBXImporter.cpp" />
+    <ClCompile Include="external\assimp\FBXMaterial.cpp" />
+    <ClCompile Include="external\assimp\FBXMeshGeometry.cpp" />
+    <ClCompile Include="external\assimp\FBXModel.cpp" />
+    <ClCompile Include="external\assimp\FBXNodeAttribute.cpp" />
+    <ClCompile Include="external\assimp\FBXParser.cpp" />
+    <ClCompile Include="external\assimp\FBXProperties.cpp" />
+    <ClCompile Include="external\assimp\FBXTokenizer.cpp" />
+    <ClCompile Include="external\assimp\FBXUtil.cpp" />
+    <ClCompile Include="external\assimp\FindDegenerates.cpp" />
+    <ClCompile Include="external\assimp\FindInstancesProcess.cpp" />
+    <ClCompile Include="external\assimp\FindInvalidDataProcess.cpp" />
+    <ClCompile Include="external\assimp\FixNormalsStep.cpp" />
+    <ClCompile Include="external\assimp\GenFaceNormalsProcess.cpp" />
+    <ClCompile Include="external\assimp\GenVertexNormalsProcess.cpp" />
+    <ClCompile Include="external\assimp\HMPLoader.cpp" />
+    <ClCompile Include="external\assimp\IFCBoolean.cpp" />
+    <ClCompile Include="external\assimp\IFCCurve.cpp" />
+    <ClCompile Include="external\assimp\IFCGeometry.cpp" />
+    <ClCompile Include="external\assimp\IFCLoader.cpp" />
+    <ClCompile Include="external\assimp\IFCMaterial.cpp" />
+    <ClCompile Include="external\assimp\IFCOpenings.cpp" />
+    <ClCompile Include="external\assimp\IFCProfile.cpp" />
+    <ClCompile Include="external\assimp\IFCReaderGen.cpp" />
+    <ClCompile Include="external\assimp\IFCUtil.cpp" />
+    <ClCompile Include="external\assimp\IRRLoader.cpp" />
+    <ClCompile Include="external\assimp\IRRMeshLoader.cpp" />
+    <ClCompile Include="external\assimp\IRRShared.cpp" />
+    <ClCompile Include="external\assimp\Importer.cpp" />
+    <ClCompile Include="external\assimp\ImporterRegistry.cpp" />
+    <ClCompile Include="external\assimp\ImproveCacheLocality.cpp" />
+    <ClCompile Include="external\assimp\JoinVerticesProcess.cpp" />
+    <ClCompile Include="external\assimp\LWOAnimation.cpp" />
+    <ClCompile Include="external\assimp\LWOBLoader.cpp" />
+    <ClCompile Include="external\assimp\LWOLoader.cpp" />
+    <ClCompile Include="external\assimp\LWOMaterial.cpp" />
+    <ClCompile Include="external\assimp\LWSLoader.cpp" />
+    <ClCompile Include="external\assimp\LimitBoneWeightsProcess.cpp" />
+    <ClCompile Include="external\assimp\MD2Loader.cpp" />
+    <ClCompile Include="external\assimp\MD3Loader.cpp" />
+    <ClCompile Include="external\assimp\MD5Loader.cpp" />
+    <ClCompile Include="external\assimp\MD5Parser.cpp" />
+    <ClCompile Include="external\assimp\MDCLoader.cpp" />
+    <ClCompile Include="external\assimp\MDLLoader.cpp" />
+    <ClCompile Include="external\assimp\MDLMaterialLoader.cpp" />
+    <ClCompile Include="external\assimp\MS3DLoader.cpp" />
+    <ClCompile Include="external\assimp\MakeVerboseFormat.cpp" />
+    <ClCompile Include="external\assimp\MaterialSystem.cpp" />
+    <ClCompile Include="external\assimp\NDOLoader.cpp" />
+    <ClCompile Include="external\assimp\NFFLoader.cpp" />
+    <ClCompile Include="external\assimp\OFFLoader.cpp" />
+    <ClCompile Include="external\assimp\ObjExporter.cpp" />
+    <ClCompile Include="external\assimp\ObjFileImporter.cpp" />
+    <ClCompile Include="external\assimp\ObjFileMtlImporter.cpp" />
+    <ClCompile Include="external\assimp\ObjFileParser.cpp" />
+    <ClCompile Include="external\assimp\OgreBinarySerializer.cpp" />
+    <ClCompile Include="external\assimp\OgreImporter.cpp" />
+    <ClCompile Include="external\assimp\OgreMaterial.cpp" />
+    <ClCompile Include="external\assimp\OgreStructs.cpp" />
+    <ClCompile Include="external\assimp\OgreXmlSerializer.cpp" />
+    <ClCompile Include="external\assimp\OptimizeGraph.cpp" />
+    <ClCompile Include="external\assimp\OptimizeMeshes.cpp" />
+    <ClCompile Include="external\assimp\PlyExporter.cpp" />
+    <ClCompile Include="external\assimp\PlyLoader.cpp" />
+    <ClCompile Include="external\assimp\PlyParser.cpp" />
+    <ClCompile Include="external\assimp\PostStepRegistry.cpp" />
+    <ClCompile Include="external\assimp\PretransformVertices.cpp" />
+    <ClCompile Include="external\assimp\ProcessHelper.cpp" />
+    <ClCompile Include="external\assimp\Q3BSPFileImporter.cpp" />
+    <ClCompile Include="external\assimp\Q3BSPFileParser.cpp" />
+    <ClCompile Include="external\assimp\Q3BSPZipArchive.cpp" />
+    <ClCompile Include="external\assimp\Q3DLoader.cpp" />
+    <ClCompile Include="external\assimp\RawLoader.cpp" />
+    <ClCompile Include="external\assimp\RemoveComments.cpp" />
+    <ClCompile Include="external\assimp\RemoveRedundantMaterials.cpp" />
+    <ClCompile Include="external\assimp\RemoveVCProcess.cpp" />
+    <ClCompile Include="external\assimp\SGSpatialSort.cpp" />
+    <ClCompile Include="external\assimp\SMDLoader.cpp" />
+    <ClCompile Include="external\SOIL\SOIL.c" />
+    <ClCompile Include="external\assimp\STEPFileEncoding.cpp" />
+    <ClCompile Include="external\assimp\STEPFileReader.cpp" />
+    <ClCompile Include="external\assimp\STLExporter.cpp" />
+    <ClCompile Include="external\assimp\STLLoader.cpp" />
+    <ClCompile Include="external\assimp\SceneCombiner.cpp" />
+    <ClCompile Include="external\assimp\ScenePreprocessor.cpp" />
+    <ClCompile Include="external\assimp\SkeletonMeshBuilder.cpp" />
+    <ClCompile Include="external\assimp\SortByPTypeProcess.cpp" />
+    <ClCompile Include="external\assimp\SpatialSort.cpp" />
+    <ClCompile Include="external\assimp\SplitByBoneCountProcess.cpp" />
+    <ClCompile Include="external\assimp\SplitLargeMeshes.cpp" />
+    <ClCompile Include="external\assimp\StandardShapes.cpp" />
+    <ClCompile Include="external\assimp\Subdivision.cpp" />
+    <ClCompile Include="external\assimp\TargetAnimation.cpp" />
+    <ClCompile Include="external\assimp\TerragenLoader.cpp" />
+    <ClCompile Include="external\assimp\TextureTransform.cpp" />
+    <ClCompile Include="external\assimp\TriangulateProcess.cpp" />
+    <ClCompile Include="external\assimp\UnrealLoader.cpp" />
+    <ClCompile Include="external\assimp\ValidateDataStructure.cpp" />
+    <ClCompile Include="external\assimp\VertexTriangleAdjacency.cpp" />
+    <ClCompile Include="external\assimp\XFileImporter.cpp" />
+    <ClCompile Include="external\assimp\XFileParser.cpp" />
+    <ClCompile Include="external\assimp\XGLLoader.cpp" />
+    <ClCompile Include="external\assimp\contrib\zlib\adler32.c" />
+    <ClCompile Include="external\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.cc" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="light\ambientlight.cpp" />
+    <ClCompile Include="backend\backend.cpp" />
+    <ClCompile Include="backend\backendbridge.cpp" />
+    <ClCompile Include="light\baselight.cpp" />
+    <ClCompile Include="base\bonedata.cpp" />
+    <ClCompile Include="base\boneinfo.cpp" />
+    <ClCompile Include="base\camera.cpp" />
+    <ClCompile Include="external\assimp\contrib\poly2tri\poly2tri\sweep\cdt.cc" />
+    <ClCompile Include="external\assimp\contrib\clipper\clipper.cpp" />
+    <ClCompile Include="external\assimp\contrib\zlib\compress.c" />
+    <ClCompile Include="external\assimp\contrib\zlib\crc32.c" />
+    <ClCompile Include="external\assimp\contrib\zlib\deflate.c" />
+    <ClCompile Include="light\directionallight.cpp" />
+    <ClCompile Include="Entity\entity.cpp" />
+    <ClCompile Include="external\assimp\contrib\zlib\gzclose.c" />
+    <ClCompile Include="external\assimp\contrib\zlib\gzlib.c" />
+    <ClCompile Include="external\assimp\contrib\zlib\gzread.c" />
+    <ClCompile Include="external\assimp\contrib\zlib\gzwrite.c" />
+    <ClCompile Include="external\SOIL\image_DXT.c" />
+    <ClCompile Include="external\SOIL\image_helper.c" />
+    <ClCompile Include="external\assimp\contrib\zlib\infback.c" />
+    <ClCompile Include="external\assimp\contrib\zlib\inffast.c" />
+    <ClCompile Include="external\assimp\contrib\zlib\inflate.c" />
+    <ClCompile Include="external\assimp\contrib\zlib\inftrees.c" />
+    <ClCompile Include="external\assimp\contrib\unzip\ioapi.c" />
+    <ClCompile Include="external\assimp\contrib\irrXML\irrXML.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="backend\mainwidget.cpp" />
+    <ClCompile Include="gl_matrix\mat3.c" />
+    <ClCompile Include="gl_matrix\mat4.c" />
+    <ClCompile Include="material\material.cpp" />
+    <ClCompile Include="material\materialchannel.cpp" />
+    <ClCompile Include="material\materialpool.cpp" />
+    <ClCompile Include="base\math_3d.cpp" />
+    <ClCompile Include="geometry\mesh.cpp" />
+    <ClCompile Include="renderer\meshdrawcomand.cpp" />
+    <ClCompile Include="mydelegate.cpp" />
+    <ClCompile Include="base\node.cpp" />
+    <ClCompile Include="renderer\pipeline.cpp" />
+    <ClCompile Include="light\pointlight.cpp" />
+    <ClCompile Include="gl_matrix\quat.c" />
+    <ClCompile Include="base\renderdelegate.cpp" />
+    <ClCompile Include="scene\scene.cpp" />
+    <ClCompile Include="shader\shader_program.cpp" />
+    <ClCompile Include="shader\shaderpoll.cpp" />
+    <ClCompile Include="light\shadow_map_fbo.cpp" />
+    <ClCompile Include="external\assimp\contrib\poly2tri\poly2tri\common\shapes.cc" />
+    <ClCompile Include="Entity\skybox.cpp" />
+    <ClCompile Include="light\spotlight.cpp" />
+    <ClCompile Include="external\SOIL\stb_image_aug.c" />
+    <ClCompile Include="gl_matrix\str.c" />
+    <ClCompile Include="external\assimp\contrib\poly2tri\poly2tri\sweep\sweep.cc" />
+    <ClCompile Include="external\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.cc" />
+    <ClCompile Include="geometry\terrain.cpp" />
+    <ClCompile Include="texture\texture.cpp" />
+    <ClCompile Include="texture\texturepool.cpp" />
+    <ClCompile Include="external\tiny_obj_loader.cc" />
+    <ClCompile Include="external\assimp\contrib\zlib\trees.c" />
+    <ClCompile Include="base\tzwengine.cpp" />
+    <ClCompile Include="external\assimp\contrib\zlib\uncompr.c" />
+    <ClCompile Include="external\assimp\contrib\unzip\unzip.c" />
+    <ClCompile Include="utility.cpp" />
+    <ClCompile Include="gl_matrix\vec3.c" />
+    <ClCompile Include="base\vertexdata.cpp" />
+    <ClCompile Include="external\assimp\contrib\zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="external\assimp\3DSHelper.h" />
+    <ClInclude Include="external\assimp\3DSLoader.h" />
+    <ClInclude Include="external\assimp\ACLoader.h" />
+    <ClInclude Include="external\assimp\ASELoader.h" />
+    <ClInclude Include="external\assimp\ASEParser.h" />
+    <ClInclude Include="external\assimp\AssimpPCH.h" />
+    <ClInclude Include="external\assimp\B3DImporter.h" />
+    <ClInclude Include="external\assimp\BVHLoader.h" />
+    <ClInclude Include="external\assimp\BaseImporter.h" />
+    <ClInclude Include="external\assimp\BaseProcess.h" />
+    <ClInclude Include="external\assimp\Bitmap.h" />
+    <ClInclude Include="external\assimp\BlenderBMesh.h" />
+    <ClInclude Include="external\assimp\BlenderDNA.h" />
+    <ClInclude Include="external\assimp\BlenderIntermediate.h" />
+    <ClInclude Include="external\assimp\BlenderLoader.h" />
+    <ClInclude Include="external\assimp\BlenderModifier.h" />
+    <ClInclude Include="external\assimp\BlenderScene.h" />
+    <ClInclude Include="external\assimp\BlenderSceneGen.h" />
+    <ClInclude Include="external\assimp\BlenderTessellator.h" />
+    <ClInclude Include="external\assimp\BlobIOSystem.h" />
+    <ClInclude Include="external\assimp\ByteSwap.h" />
+    <ClInclude Include="external\assimp\CInterfaceIOWrapper.h" />
+    <ClInclude Include="external\assimp\COBLoader.h" />
+    <ClInclude Include="external\assimp\COBScene.h" />
+    <ClInclude Include="external\assimp\CSMLoader.h" />
+    <ClInclude Include="external\assimp\contrib\irrXML\CXMLReaderImpl.h" />
+    <ClInclude Include="external\assimp\CalcTangentsProcess.h" />
+    <ClInclude Include="external\assimp\ColladaExporter.h" />
+    <ClInclude Include="external\assimp\ColladaHelper.h" />
+    <ClInclude Include="external\assimp\ColladaLoader.h" />
+    <ClInclude Include="external\assimp\ColladaParser.h" />
+    <ClInclude Include="external\assimp\ComputeUVMappingProcess.h" />
+    <ClInclude Include="external\assimp\ConvertToLHProcess.h" />
+    <ClInclude Include="external\assimp\contrib\ConvertUTF\ConvertUTF.h" />
+    <ClInclude Include="external\assimp\DXFHelper.h" />
+    <ClInclude Include="external\assimp\DXFLoader.h" />
+    <ClInclude Include="external\assimp\DeboneProcess.h" />
+    <ClInclude Include="external\assimp\DefaultIOStream.h" />
+    <ClInclude Include="external\assimp\DefaultIOSystem.h" />
+    <ClInclude Include="external\include\assimp\DefaultLogger.hpp" />
+    <ClInclude Include="external\assimp\DefaultProgressHandler.h" />
+    <ClInclude Include="external\assimp\Exceptional.h" />
+    <ClInclude Include="external\include\assimp\Exporter.hpp" />
+    <ClInclude Include="external\assimp\FBXCompileConfig.h" />
+    <ClInclude Include="external\assimp\FBXConverter.h" />
+    <ClInclude Include="external\assimp\FBXDocument.h" />
+    <ClInclude Include="external\assimp\FBXDocumentUtil.h" />
+    <ClInclude Include="external\assimp\FBXImportSettings.h" />
+    <ClInclude Include="external\assimp\FBXImporter.h" />
+    <ClInclude Include="external\assimp\FBXParser.h" />
+    <ClInclude Include="external\assimp\FBXProperties.h" />
+    <ClInclude Include="external\assimp\FBXTokenizer.h" />
+    <ClInclude Include="external\assimp\FBXUtil.h" />
+    <ClInclude Include="external\assimp\FileLogStream.h" />
+    <ClInclude Include="external\assimp\FileSystemFilter.h" />
+    <ClInclude Include="external\assimp\FindDegenerates.h" />
+    <ClInclude Include="external\assimp\FindInstancesProcess.h" />
+    <ClInclude Include="external\assimp\FindInvalidDataProcess.h" />
+    <ClInclude Include="external\assimp\FixNormalsStep.h" />
+    <ClInclude Include="external\assimp\GenFaceNormalsProcess.h" />
+    <ClInclude Include="external\assimp\GenVertexNormalsProcess.h" />
+    <ClInclude Include="external\assimp\GenericProperty.h" />
+    <ClInclude Include="external\assimp\HMPFileData.h" />
+    <ClInclude Include="external\assimp\HMPLoader.h" />
+    <ClInclude Include="external\assimp\HalfLifeFileData.h" />
+    <ClInclude Include="external\assimp\Hash.h" />
+    <ClInclude Include="external\assimp\IFCLoader.h" />
+    <ClInclude Include="external\assimp\IFCReaderGen.h" />
+    <ClInclude Include="external\assimp\IFCUtil.h" />
+    <ClInclude Include="external\assimp\IFF.h" />
+    <ClInclude Include="external\include\assimp\IOStream.hpp" />
+    <ClInclude Include="external\include\assimp\IOSystem.hpp" />
+    <ClInclude Include="external\assimp\IRRLoader.h" />
+    <ClInclude Include="external\assimp\IRRMeshLoader.h" />
+    <ClInclude Include="external\assimp\IRRShared.h" />
+    <ClInclude Include="external\assimp\Importer.h" />
+    <ClInclude Include="external\include\assimp\Importer.hpp" />
+    <ClInclude Include="external\assimp\ImproveCacheLocality.h" />
+    <ClInclude Include="external\assimp\JoinVerticesProcess.h" />
+    <ClInclude Include="external\assimp\LWOAnimation.h" />
+    <ClInclude Include="external\assimp\LWOFileData.h" />
+    <ClInclude Include="external\assimp\LWOLoader.h" />
+    <ClInclude Include="external\assimp\LWSLoader.h" />
+    <ClInclude Include="external\assimp\LimitBoneWeightsProcess.h" />
+    <ClInclude Include="external\assimp\LineSplitter.h" />
+    <ClInclude Include="external\assimp\LogAux.h" />
+    <ClInclude Include="external\include\assimp\LogStream.hpp" />
+    <ClInclude Include="external\include\assimp\Logger.hpp" />
+    <ClInclude Include="external\assimp\MD2FileData.h" />
+    <ClInclude Include="external\assimp\MD2Loader.h" />
+    <ClInclude Include="external\assimp\MD2NormalTable.h" />
+    <ClInclude Include="external\assimp\MD3FileData.h" />
+    <ClInclude Include="external\assimp\MD3Loader.h" />
+    <ClInclude Include="external\assimp\MD4FileData.h" />
+    <ClInclude Include="external\assimp\MD5Loader.h" />
+    <ClInclude Include="external\assimp\MD5Parser.h" />
+    <ClInclude Include="external\assimp\MDCFileData.h" />
+    <ClInclude Include="external\assimp\MDCLoader.h" />
+    <ClInclude Include="external\assimp\MDCNormalTable.h" />
+    <ClInclude Include="external\assimp\MDLDefaultColorMap.h" />
+    <ClInclude Include="external\assimp\MDLFileData.h" />
+    <ClInclude Include="external\assimp\MDLLoader.h" />
+    <ClInclude Include="external\assimp\MS3DLoader.h" />
+    <ClInclude Include="external\assimp\MakeVerboseFormat.h" />
+    <ClInclude Include="external\assimp\MaterialSystem.h" />
+    <ClInclude Include="external\assimp\MemoryIOWrapper.h" />
+    <ClInclude Include="external\assimp\NDOLoader.h" />
+    <ClInclude Include="external\assimp\NFFLoader.h" />
+    <ClInclude Include="external\include\assimp\NullLogger.hpp" />
+    <ClInclude Include="external\assimp\OFFLoader.h" />
+    <ClInclude Include="external\assimp\ObjExporter.h" />
+    <ClInclude Include="external\assimp\ObjFileData.h" />
+    <ClInclude Include="external\assimp\ObjFileImporter.h" />
+    <ClInclude Include="external\assimp\ObjFileMtlImporter.h" />
+    <ClInclude Include="external\assimp\ObjFileParser.h" />
+    <ClInclude Include="external\assimp\ObjTools.h" />
+    <ClInclude Include="external\assimp\OgreBinarySerializer.h" />
+    <ClInclude Include="external\assimp\OgreImporter.h" />
+    <ClInclude Include="external\assimp\OgreParsingUtils.h" />
+    <ClInclude Include="external\assimp\OgreStructs.h" />
+    <ClInclude Include="external\assimp\OgreXmlSerializer.h" />
+    <ClInclude Include="external\assimp\OptimizeGraph.h" />
+    <ClInclude Include="external\assimp\OptimizeMeshes.h" />
+    <ClInclude Include="external\assimp\ParsingUtils.h" />
+    <ClInclude Include="external\assimp\PlyExporter.h" />
+    <ClInclude Include="external\assimp\PlyLoader.h" />
+    <ClInclude Include="external\assimp\PlyParser.h" />
+    <ClInclude Include="external\assimp\PolyTools.h" />
+    <ClInclude Include="external\assimp\PretransformVertices.h" />
+    <ClInclude Include="external\assimp\ProcessHelper.h" />
+    <ClInclude Include="external\assimp\Profiler.h" />
+    <ClInclude Include="external\include\assimp\ProgressHandler.hpp" />
+    <ClInclude Include="external\assimp\Q3BSPFileData.h" />
+    <ClInclude Include="external\assimp\Q3BSPFileImporter.h" />
+    <ClInclude Include="external\assimp\Q3BSPFileParser.h" />
+    <ClInclude Include="external\assimp\Q3BSPZipArchive.h" />
+    <ClInclude Include="external\assimp\Q3DLoader.h" />
+    <ClInclude Include="external\assimp\RawLoader.h" />
+    <ClInclude Include="external\assimp\RemoveComments.h" />
+    <ClInclude Include="external\assimp\RemoveRedundantMaterials.h" />
+    <ClInclude Include="external\assimp\RemoveVCProcess.h" />
+    <ClInclude Include="external\assimp\SGSpatialSort.h" />
+    <ClInclude Include="external\assimp\SMDLoader.h" />
+    <ClInclude Include="external\SOIL\SOIL.h" />
+    <ClInclude Include="external\assimp\STEPFile.h" />
+    <ClInclude Include="external\assimp\STEPFileEncoding.h" />
+    <ClInclude Include="external\assimp\STEPFileReader.h" />
+    <ClInclude Include="external\assimp\STLExporter.h" />
+    <ClInclude Include="external\assimp\STLLoader.h" />
+    <ClInclude Include="external\assimp\SceneCombiner.h" />
+    <ClInclude Include="external\assimp\ScenePreprocessor.h" />
+    <ClInclude Include="external\assimp\ScenePrivate.h" />
+    <ClInclude Include="external\assimp\SkeletonMeshBuilder.h" />
+    <ClInclude Include="external\assimp\SmoothingGroups.h" />
+    <ClInclude Include="external\assimp\SortByPTypeProcess.h" />
+    <ClInclude Include="external\assimp\SpatialSort.h" />
+    <ClInclude Include="external\assimp\SplitByBoneCountProcess.h" />
+    <ClInclude Include="external\assimp\SplitLargeMeshes.h" />
+    <ClInclude Include="external\assimp\StandardShapes.h" />
+    <ClInclude Include="external\assimp\StdOStreamLogStream.h" />
+    <ClInclude Include="external\assimp\StreamReader.h" />
+    <ClInclude Include="external\assimp\StringComparison.h" />
+    <ClInclude Include="external\assimp\Subdivision.h" />
+    <ClInclude Include="external\assimp\TargetAnimation.h" />
+    <ClInclude Include="external\assimp\TerragenLoader.h" />
+    <ClInclude Include="external\assimp\TextureTransform.h" />
+    <ClInclude Include="external\assimp\TinyFormatter.h" />
+    <ClInclude Include="external\assimp\TriangulateProcess.h" />
+    <ClInclude Include="external\assimp\UnrealLoader.h" />
+    <ClInclude Include="external\assimp\ValidateDataStructure.h" />
+    <ClInclude Include="external\assimp\Vertex.h" />
+    <ClInclude Include="external\assimp\VertexTriangleAdjacency.h" />
+    <ClInclude Include="external\assimp\Win32DebugLogStream.h" />
+    <ClInclude Include="external\assimp\XFileHelper.h" />
+    <ClInclude Include="external\assimp\XFileImporter.h" />
+    <ClInclude Include="external\assimp\XFileParser.h" />
+    <ClInclude Include="external\assimp\XGLLoader.h" />
+    <ClInclude Include="external\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.h" />
+    <ClInclude Include="external\include\assimp\ai_assert.h" />
+    <ClInclude Include="light\ambientlight.h" />
+    <ClInclude Include="external\include\assimp\anim.h" />
+    <ClInclude Include="external\assimp\assbin_chunks.h" />
+    <ClInclude Include="backend\backend.h" />
+    <ClInclude Include="backend\backendbridge.h" />
+    <ClInclude Include="light\baselight.h" />
+    <ClInclude Include="base\bonedata.h" />
+    <ClInclude Include="base\boneinfo.h" />
+    <ClInclude Include="base\camera.h" />
+    <ClInclude Include="external\include\assimp\camera.h" />
+    <ClInclude Include="external\assimp\contrib\poly2tri\poly2tri\sweep\cdt.h" />
+    <ClInclude Include="external\include\assimp\cexport.h" />
+    <ClInclude Include="external\include\assimp\cfileio.h" />
+    <ClInclude Include="external\include\assimp\cimport.h" />
+    <ClInclude Include="external\assimp\contrib\clipper\clipper.hpp" />
+    <ClInclude Include="external\include\assimp\color4.h" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\math\common_factor_rt.hpp" />
+    <ClInclude Include="external\include\assimp\config.h" />
+    <ClInclude Include="external\assimp\contrib\zlib\crc32.h" />
+    <ClInclude Include="external\assimp\contrib\unzip\crypt.h" />
+    <ClInclude Include="external\assimp\contrib\zlib\deflate.h" />
+    <ClInclude Include="external\include\assimp\defs.h" />
+    <ClInclude Include="light\directionallight.h" />
+    <ClInclude Include="Entity\entity.h" />
+    <ClInclude Include="external\assimp\fast_atof.h" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\foreach.hpp" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\format.hpp" />
+    <ClInclude Include="gl_matrix\gl-matrix.h" />
+    <ClInclude Include="external\assimp\contrib\zlib\gzguts.h" />
+    <ClInclude Include="external\assimp\contrib\irrXML\heapsort.h" />
+    <ClInclude Include="external\SOIL\image_DXT.h" />
+    <ClInclude Include="external\SOIL\image_helper.h" />
+    <ClInclude Include="external\include\assimp\importerdesc.h" />
+    <ClInclude Include="external\assimp\contrib\zlib\inffast.h" />
+    <ClInclude Include="external\assimp\contrib\zlib\inffixed.h" />
+    <ClInclude Include="external\assimp\contrib\zlib\inflate.h" />
+    <ClInclude Include="external\assimp\contrib\zlib\inftrees.h" />
+    <ClInclude Include="external\assimp\contrib\unzip\ioapi.h" />
+    <ClInclude Include="external\assimp\contrib\irrXML\irrArray.h" />
+    <ClInclude Include="external\assimp\contrib\irrXML\irrString.h" />
+    <ClInclude Include="external\assimp\contrib\irrXML\irrTypes.h" />
+    <ClInclude Include="external\assimp\contrib\irrXML\irrXML.h" />
+    <ClInclude Include="external\assimp\irrXMLWrapper.h" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\lexical_cast.hpp" />
+    <ClInclude Include="external\include\assimp\light.h" />
+    <CustomBuild Include="backend\mainwidget.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-IC:\qt\qt5.5.1\5.5\msvc2013\include" "-IC:\qt\qt5.5.1\5.5\msvc2013\include\QtOpenGL" "-IC:\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-IC:\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-IC:\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-IC:\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-IC:\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing mainwidget.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-IC:\qt\qt5.5.1\5.5\msvc2013\include" "-IC:\qt\qt5.5.1\5.5\msvc2013\include\QtOpenGL" "-IC:\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-IC:\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-IC:\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-IC:\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-IC:\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing mainwidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\make_shared.hpp" />
+    <ClInclude Include="external\include\assimp\material.h" />
+    <ClInclude Include="material\material.h" />
+    <ClInclude Include="material\materialchannel.h" />
+    <ClInclude Include="material\materialpool.h" />
+    <ClInclude Include="external\include\assimp\matrix3x3.h" />
+    <ClInclude Include="external\include\assimp\matrix4x4.h" />
+    <ClInclude Include="external\include\assimp\mesh.h" />
+    <ClInclude Include="geometry\mesh.h" />
+    <ClInclude Include="renderer\meshdrawcomand.h" />
+    <ClInclude Include="external\include\assimp\metadata.h" />
+    <ClInclude Include="mydelegate.h" />
+    <ClInclude Include="base\node.h" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\noncopyable.hpp" />
+    <ClInclude Include="base\ogldev_math_3d.h" />
+    <ClInclude Include="renderer\pipeline.h" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\pointer_cast.hpp" />
+    <ClInclude Include="light\pointlight.h" />
+    <ClInclude Include="external\assimp\contrib\poly2tri\poly2tri\poly2tri.h" />
+    <ClInclude Include="external\include\assimp\Compiler\poppack1.h" />
+    <ClInclude Include="external\include\assimp\postprocess.h" />
+    <ClInclude Include="external\include\assimp\Compiler\pstdint.h" />
+    <ClInclude Include="external\include\assimp\Compiler\pushpack1.h" />
+    <ClInclude Include="external\assimp\qnan.h" />
+    <ClInclude Include="external\include\assimp\quaternion.h" />
+    <ClInclude Include="base\renderdelegate.h" />
+    <ClInclude Include="external\include\assimp\scene.h" />
+    <ClInclude Include="scene\scene.h" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\scoped_array.hpp" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\scoped_ptr.hpp" />
+    <ClInclude Include="shader\shader_program.h" />
+    <ClInclude Include="shader\shaderpoll.h" />
+    <ClInclude Include="light\shadow_map_fbo.h" />
+    <ClInclude Include="external\assimp\contrib\poly2tri\poly2tri\common\shapes.h" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\shared_array.hpp" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\shared_ptr.hpp" />
+    <ClInclude Include="Entity\skybox.h" />
+    <ClInclude Include="light\spotlight.h" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\static_assert.hpp" />
+    <ClInclude Include="external\SOIL\stb_image_aug.h" />
+    <ClInclude Include="external\SOIL\stbi_DDS_aug.h" />
+    <ClInclude Include="external\SOIL\stbi_DDS_aug_c.h" />
+    <ClInclude Include="external\assimp\contrib\poly2tri\poly2tri\sweep\sweep.h" />
+    <ClInclude Include="external\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.h" />
+    <ClInclude Include="geometry\terrain.h" />
+    <ClInclude Include="external\include\assimp\texture.h" />
+    <ClInclude Include="texture\texture.h" />
+    <ClInclude Include="texture\texturepool.h" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\timer.hpp" />
+    <ClInclude Include="external\tiny_obj_loader.h" />
+    <ClInclude Include="external\assimp\contrib\zlib\trees.h" />
+    <ClInclude Include="external\assimp\BoostWorkaround\boost\tuple\tuple.hpp" />
+    <ClInclude Include="external\include\assimp\types.h" />
+    <ClInclude Include="base\tzwengine.h" />
+    <ClInclude Include="external\assimp\contrib\unzip\unzip.h" />
+    <ClInclude Include="utility.h" />
+    <ClInclude Include="external\assimp\contrib\poly2tri\poly2tri\common\utils.h" />
+    <ClInclude Include="external\include\assimp\vector2.h" />
+    <ClInclude Include="external\include\assimp\vector3.h" />
+    <ClInclude Include="external\include\assimp\version.h" />
+    <ClInclude Include="base\vertexdata.h" />
+    <ClInclude Include="external\assimp\contrib\zlib\zconf.in.h" />
+    <ClInclude Include="external\assimp\contrib\zlib\zlib.h" />
+    <ClInclude Include="external\assimp\contrib\zlib\zutil.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" Qt5Version_x0020_Win32="Qt5.5.1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
